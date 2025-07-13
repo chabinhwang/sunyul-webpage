@@ -1,533 +1,171 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-    <title>Dimension by HTML5 UP</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
-    <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/>
-    </noscript>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선율(Sunyul) - 건국대학교 중앙 피아노 동아리</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="is-preload">
+<body>
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+    
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+    </div>
+    
+    <!-- <nav class="mobile-nav">
+        <ul>
+            <li><a href="#about" class="smooth-scroll"><i class="fas fa-info-circle"></i><span>소개</span></a></li>
+            <li><a href="#activities" class="smooth-scroll"><i class="fas fa-music"></i><span>활동</span></a></li>
+            <li><a href="#gallery" class="smooth-scroll"><i class="fas fa-images"></i><span>갤러리</span></a></li>
+            <li><a href="#join" class="smooth-scroll"><i class="fas fa-user-plus"></i><span>가입</span></a></li>
+        </ul>
+    </nav> -->
 
-<!-- Wrapper -->
-<div id="wrapper">
-
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <!-- <span class="icon fa-gem"></span> -->
-            <img src="images/whiteicon.png" alt="" class="logo-image"/>
+    <header>
+        <div class="header-content">
+            <h1>선율 <span class="en">Sunyul</span></h1>
+            <p class="tagline">건국대학교 중앙 피아노 동아리</p>
         </div>
-        <div class="content">
-            <div class="inner">
-                <h1>Sunyul</h1>
-                <!--								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />-->
-                <!--								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.-->
-                <p>
-                    피아노를 사랑하는 사람들이 만드는 아름다운 소리, <br>
-                    건국대학교 피아노 중앙동아리 선율입니다.
-                </p>
-
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#intro">History</a></li>
-                <li><a href="#work">Program</a></li>
-                <li><a href="#about">Credit</a></li>
-                <!--								<li><a href="#contact">Contact</a></li>-->
-                <!--<li><a href="#elements">Elements</a></li>-->
-            </ul>
-        </nav>
+        <a href="#about" class="scroll-down-indicator smooth-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </header>
 
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Intro -->
-        <article id="intro">
-            <h2 class="major">History</h2>
-            <span class="image main"><img src="images/posters/2017_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2017년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2017_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2017년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2018_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2018년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2018_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2018년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2019_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2019년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2019_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2019년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2020_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2020년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2021_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2021년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2021_2.png" alt=""/></span>
-            <h4 style="text-align: center;">2021년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2022_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2022년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2022_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2022년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2023_1.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2023년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2023_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2023년 2학기</h4>
-
-            <span class="image main"><img src="images/posters/2024_1.png" alt=""/></span>
-            <h4 style="text-align: center;">2024년 1학기</h4>
-
-            <span class="image main"><img src="images/posters/2024_2.jpg" alt=""/></span>
-            <h4 style="text-align: center;">2024년 2학기</h4>
-            <!-- <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
-                Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus
-                nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome
-                    work</a>.</p> -->
-        </article>
-
-        <!-- Work -->
-        <article id="work">
-            <h2 class="major">Program</h2>
-            <!-- <span class="image main"><img src="images/sheets/sheet1.png" alt=""/></span> -->
-
-
-            <!-- <span class="image main"><img src="images/sheets/sheet2.png" alt=""/></span> -->
-
-            <strong>pf. 수학과 22학번 장동혁</strong>
-            <p><em>장동닭<br>어둠 속 별처럼 (extended)</em></p>
-
-            <strong>pf. 생명과학특성학과 21학번 권기웅</strong>
-            <p><em>R. Schumann<br>Kinderszenen, Op. 15: VII. Träumerei</em></p>
-
-            <strong>pf. 컴퓨터공학부 21학번 정수흠</strong>
-            <p><em>W. A. Mozart<br>Piano Sonata No. 10 in C Major, K. 330: I. Allegro moderato</em></p>
-
-            <strong>pf. 동물자원식품과학유통학부 24학번 신민철</strong>
-            <p><em>Hakdo<br>The First Piece of My Soul</em></p>
-
-            <strong>pf. 기계로봇자동차공학과 19학번 박준형</strong>
-            <p><em>marasy<br>tadu</em></p>
-
-            <strong>pf. 기계로봇자동차공학과 22학번 김남준</strong>
-            <p><em>S. Rachmaninoff<br>Rhapsody on a Theme of Paganini, Op. 43: Var. 18 (Piano solo)</em></p>
-
-            <strong>pf. 기술경영학과 24학번 박준호</strong>
-            <p><em>F. Chopin<br>Scherzo No. 2 in B-flat minor, Op. 31</em></p>
-            
-            <div style="text-align: center; font-weight: bold; font-size: 20px; margin-top: 10%;">
-                <i>- Intermission -</i>
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Sunyul</h2>
+                <p>선율(Sunyul)은 건국대학교의 중앙 피아노 동아리로, 피아노를 사랑하는 학생들이 모여 음악적 재능을 나누고 발전시키는 공간입니다. 전공자부터 비전공자까지 피아노에 관심 있는 모든 학생들에게 열려있으며, 다양한 음악 활동을 통해 캠퍼스 생활의 아름다운 선율을 만들어가고 있습니다.</p>
             </div>
-            <br><br>
+        </section>
 
-            <strong>pf. 영어영문학과 23학번 이단희<br>
-                pf. 컴퓨터공학부 21학번 정수흠</strong>
-            <p><em>M. Moszkowski<br>Spanish Dances Op. 12 No. 3</em></p>
-
-            <strong>pf. 기계항공공학부 21학번 김경주</strong>
-            <p><em>Oshima Michiru<br>변하지 않는 것 (시간을 달리는 소녀 OST)</em></p>
-
-            <strong>pf. 미디어커뮤니케이션학과 18학번 박지호</strong>
-            <p><em>Yiruma<br>Loanna</em></p>
-
-            <strong>pf. 컴퓨터공학부 25학번 임서준</strong>
-            <p><em>Kenshi Yonezu<br>Spinning Globe</em></p>
-
-            <strong>pf. 기계공학과 25학번 강준혁</strong>
-            <p><em>Ennio Morricone<br>Playing Love</em></p>
-
-            <strong>pf. 식량자원과학과 25학번 이태성</strong>
-            <p><em>PianiCast<br>Milky Way</em></p>
-
-            <strong>pf. 공과대학자유전공학부 25학번 송후근</strong>
-            <p><em>Hiroyuki Sawano (arr. Animenz)<br>Call of silence (진격의 거인 OST)</em></p>
-
-            <strong>pf. 컴퓨터공학부 20학번 강상민</strong>
-            <p><em>F. Liszt<br>Transcendental Etude No. 10 in F minor, "Appassionata"</em></p>
-        </article>
-
-        <!-- About -->
-        <article id="about">
-            <h2 class="major">Credit</h2>
-            <!-- <span class="image main"><img src="images/pic03.jpg" alt=""/></span> -->
-            <p>
-                <strong>사회</strong><br>
-                정수흠 (컴퓨터공학부 21학번)<br>
-                이단희 (영어영문학과 23학번)<br><br>
-                
-                <strong>총괄</strong><br>
-                이단희<br><br>
-                
-                <strong>총괄 도우미</strong><br>
-                김준희 (문과대학자유전공학부 25학번)<br><br>
-                
-                <strong>총무</strong><br>
-                권기웅 (생명과학특성학과 21학번)<br><br>
-                
-                <strong>기획</strong><br>
-                이단희<br>  
-                박세환 (화학공학부 21학번)<br>  
-                안서빈 (정치외교학과 25학번)<br>  
-                이유환 (컴퓨터공학부 21학번)<br>  
-                임서준 (컴퓨터공학부 25학번)<br>
-                장윤준 (KU자유전공학부 25학번)<br><br>
-                
-                <strong>촬영 및 영상</strong><br>
-                김예원 (사회환경공학부 24학번)<br><br>
-                
-                <strong>페이지 터너</strong><br>
-                박세환<br><br>
-                
-                <strong>하우스 어텐던트</strong><br>
-                김영림 (화학공학부 24학번)<br>  
-                안서빈<br><br>
-                
-                <strong>홀 입장 관리</strong><br>
-                장윤준<br>
-                최한나 (영상학과 23학번)<br><br>
-                
-                <strong>리허설 관리</strong><br>
-                장윤준<br><br>
-                
-                <strong>연습실 관리</strong><br>
-                민정윤 (영어영문학과 24학번)<br>  
-                이유환<br>  
-                황차빈 (컴퓨터공학부 21학번)<br><br>
-                
-                <strong>대기실 관리</strong><br>
-                민정윤<br><br>
-                
-                <strong>포스터 & 책자 제작</strong><br>
-                김예원<br>  
-                민정윤<br>  
-                송후근 (공과대학자유전공학부 25학번)<br>
-                최한나<br><br>
-                
-                <strong>웹사이트 제작</strong><br>
-                정수흠<br>
-                황차빈<br><br>
-            </p>
-        </article>
-
-        <!-- Contact -->
-        <article id="contact">
-            <h2 class="major">Contact</h2>
-            <form method="post" action="#">
-                <div class="fields">
-                    <div class="field half">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name"/>
+        <section id="activities" class="activities">
+            <div class="container">
+                <h2>Our Activities</h2>
+                <div class="activity-cards">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h3>정기 연주회</h3>
+                        <p>매 학기 말 진행되는 정기 연주회를 통해 한 학기 동안 갈고닦은 실력을 선보입니다. 솔로 연주부터 협연까지 다양한 형태의 무대를 경험할 수 있습니다.</p>
                     </div>
-                    <div class="field half">
-                        <label for="email">Email</label>
-                        <input type="text" name="email" id="email"/>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-piano"></i></div>
+                        <h3>피아노 합주</h3>
+                        <p>동아리원들과 함께하는 피아노 합주 활동을 통해 화합과 조화를 배웁니다. 4hands, 8hands 등 여러 형태의 합주를 연습하고 공연합니다.</p>
                     </div>
-                    <div class="field">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4"></textarea>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-microphone-alt"></i></div>
+                        <h3>소규모 발표회</h3>
+                        <p>부담 없는 분위기에서 진행되는 소규모 발표회를 통해 연주 경험을 쌓고 동아리원들과 음악적 교류를 나눕니다.</p>
                     </div>
                 </div>
-                <ul class="actions">
-                    <li><input type="submit" value="Send Message" class="primary"/></li>
-                    <li><input type="reset" value="Reset"/></li>
-                </ul>
-            </form>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </article>
+            </div>
+        </section>
 
-        <!-- Elements -->
-        <article id="elements">
-            <h2 class="major">Elements</h2>
-
-            <section>
-                <h3 class="major">Text</h3>
-                <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-                    This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-                    This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this
-                        is a link</a>.</p>
-                <hr/>
-                <h2>Heading Level 2</h2>
-                <h3>Heading Level 3</h3>
-                <h4>Heading Level 4</h4>
-                <h5>Heading Level 5</h5>
-                <h6>Heading Level 6</h6>
-                <hr/>
-                <h4>Blockquote</h4>
-                <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
-                    euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-                    volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor
-                    sit amet nullam adipiscing eu felis.
-                </blockquote>
-                <h4>Preformatted</h4>
-                <pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-            </section>
-
-            <section>
-                <h3 class="major">Lists</h3>
-
-                <h4>Unordered</h4>
-                <ul>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                </ul>
-
-                <h4>Alternate</h4>
-                <ul class="alt">
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Sagittis adipiscing.</li>
-                    <li>Felis enim feugiat.</li>
-                </ul>
-
-                <h4>Ordered</h4>
-                <ol>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis viverra.</li>
-                    <li>Felis enim feugiat.</li>
-                    <li>Dolor pulvinar etiam.</li>
-                    <li>Etiam vel felis lorem.</li>
-                    <li>Felis enim et feugiat.</li>
-                </ol>
-                <h4>Icons</h4>
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                </ul>
-
-                <h4>Actions</h4>
-                <ul class="actions">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions stacked">
-                    <li><a href="#" class="button primary">Default</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-            </section>
-
-            <section>
-                <h3 class="major">Table</h3>
-                <h4>Default</h4>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-
-                <h4>Alternate</h4>
-                <div class="table-wrapper">
-                    <table class="alt">
-                        <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>Price</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
-                        <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
-                        </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </section>
-
-            <section>
-                <h3 class="major">Buttons</h3>
-                <ul class="actions">
-                    <li><a href="#" class="button primary">Primary</a></li>
-                    <li><a href="#" class="button">Default</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="#" class="button">Default</a></li>
-                    <li><a href="#" class="button small">Small</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-                    <li><a href="#" class="button icon solid fa-download">Icon</a></li>
-                </ul>
-                <ul class="actions">
-                    <li><span class="button primary disabled">Disabled</span></li>
-                    <li><span class="button disabled">Disabled</span></li>
-                </ul>
-            </section>
-
-            <section>
-                <h3 class="major">Form</h3>
-                <form method="post" action="#">
-                    <div class="fields">
-                        <div class="field half">
-                            <label for="demo-name">Name</label>
-                            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe"/>
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                
+                <div id="concert-gallery" class="gallery-section">
+                    <h3>정기 연주회</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-slider" id="concert-slider">
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="정기 연주회 장면 1">
+                                <div class="slide-caption">2023년 봄 정기 연주회</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="정기 연주회 장면 2">
+                                <div class="slide-caption">2022년 가을 정기 연주회</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1551886856-08f68bb55218?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="정기 연주회 장면 3">
+                                <div class="slide-caption">2022년 봄 정기 연주회</div>
+                            </div>
                         </div>
-                        <div class="field half">
-                            <label for="demo-email">Email</label>
-                            <input type="email" name="demo-email" id="demo-email" value=""
-                                   placeholder="jane@untitled.tld"/>
-                        </div>
-                        <div class="field">
-                            <label for="demo-category">Category</label>
-                            <select name="demo-category" id="demo-category">
-                                <option value="">-</option>
-                                <option value="1">Manufacturing</option>
-                                <option value="1">Shipping</option>
-                                <option value="1">Administration</option>
-                                <option value="1">Human Resources</option>
-                            </select>
-                        </div>
-                        <div class="field half">
-                            <input type="radio" id="demo-priority-low" name="demo-priority" checked>
-                            <label for="demo-priority-low">Low</label>
-                        </div>
-                        <div class="field half">
-                            <input type="radio" id="demo-priority-high" name="demo-priority">
-                            <label for="demo-priority-high">High</label>
-                        </div>
-                        <div class="field half">
-                            <input type="checkbox" id="demo-copy" name="demo-copy">
-                            <label for="demo-copy">Email me a copy</label>
-                        </div>
-                        <div class="field half">
-                            <input type="checkbox" id="demo-human" name="demo-human" checked>
-                            <label for="demo-human">Not a robot</label>
-                        </div>
-                        <div class="field">
-                            <label for="demo-message">Message</label>
-                            <textarea name="demo-message" id="demo-message" placeholder="Enter your message"
-                                      rows="6"></textarea>
-                        </div>
+                        <button class="slider-nav prev" onclick="moveSlide(-1, 'concert-slider')">❮</button>
+                        <button class="slider-nav next" onclick="moveSlide(1, 'concert-slider')">❯</button>
                     </div>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" class="primary"/></li>
-                        <li><input type="reset" value="Reset"/></li>
+                </div>
+                
+                <div id="small-concert-gallery" class="gallery-section">
+                    <h3>소규모 연주회</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-slider" id="small-concert-slider">
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="소규모 연주회 장면 1">
+                                <div class="slide-caption">2023년 3월 작은 연주회</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="소규모 연주회 장면 2">
+                                <div class="slide-caption">2022년 11월 작은 연주회</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="소규모 연주회 장면 3">
+                                <div class="slide-caption">2022년 5월 작은 연주회</div>
+                            </div>
+                        </div>
+                        <button class="slider-nav prev" onclick="moveSlide(-1, 'small-concert-slider')">❮</button>
+                        <button class="slider-nav next" onclick="moveSlide(1, 'small-concert-slider')">❯</button>
+                    </div>
+                </div>
+                
+                <div id="social-gallery" class="gallery-section">
+                    <h3>친목 행사</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-slider" id="social-slider">
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="친목 행사 장면 1">
+                                <div class="slide-caption">2023년 신입생 환영회</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="친목 행사 장면 2">
+                                <div class="slide-caption">2022년 종강 파티</div>
+                            </div>
+                            <div class="slide">
+                                <img class="zoomable" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" data-src="https://images.unsplash.com/photo-1515169067868-5387ec356754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="친목 행사 장면 3">
+                                <div class="slide-caption">2022년 MT</div>
+                            </div>
+                        </div>
+                        <button class="slider-nav prev" onclick="moveSlide(-1, 'social-slider')">❮</button>
+                        <button class="slider-nav next" onclick="moveSlide(1, 'social-slider')">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="join">
+            <div class="container">
+                <h2>Join Us</h2>
+                <p>선율에 관심 있으신가요? 언제든지 문의해주세요!</p>
+                <div class="contact-info">
+                    <p><strong>모집 기간:</strong> 매 학기 초 (3월, 9월)</p>
+                    <p><strong>지원 자격:</strong> 건국대학교 재학생 누구나 (피아노 경험 무관)</p>
+                    <p><strong>문의처:</strong></p>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> 이메일: <a href="mailto:sunyul@konkuk.ac.kr">sunyul@konkuk.ac.kr</a></li>
+                        <li><i class="fab fa-instagram"></i> 인스타그램: <a href="https://instagram.com/ku_sunyul" target="_blank">@ku_sunyul</a></li>
                     </ul>
-                </form>
-            </section>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        </article>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <a href="https://www.instagram.com/ku_sunyul?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="border-bottom: none;">
-            <img src="./images/insta.png" width="20px" alt="Instagram Link"/>
-        </a>
-        <p class="copyright">건국대학교 피아노동아리 선율</p>
+    <footer>
+        <div class="container">
+            <p>© 2023 선율(Sunyul) - 건국대학교 중앙 피아노 동아리</p>
+        </div>
     </footer>
 
-</div>
-
-<!-- BG -->
-<div id="bg"></div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
